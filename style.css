@@ -62,26 +62,35 @@ body {
 #containerTheme {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 55px;
   height: 55px;
 }
 
 #changeTheme {
+  cursor: pointer;
   background-color: rgb(33, 33, 33,);
   border-radius: 5px;
+  font-size: 50px;
 }
 
 .links {
-  height: 45%;
+  height: 30%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 10px;
 }
 
 .btn_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-size: 12pt;
+  text-decoration: none;
   color: #fff;
   border-radius: 8px;
   width: 350px;
@@ -90,13 +99,14 @@ body {
 
   background-color: rgba(0, 0, 0, 0);
 
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .btn_links:hover {
   background-color: rgba(35, 33, 55, 0.5);
   border: 2px solid #fff;
   backdrop-filter: blur(50px);
+  font-size: 13pt;
 }
 
 .socialLinks {
@@ -126,7 +136,7 @@ footer {
 }
 
 .lighmode #changeTheme {
-  content: url(assets/Sun.svg);
+  content: url(assets/sunny-outline.svg)
 }
 
 .lighmode button {
@@ -147,6 +157,8 @@ footer {
 }
 
 
+
+/*
 @media screen and (min-width: 480px) and (orientation: landscape) {
   
   body {
@@ -218,3 +230,4 @@ footer {
 
 
 }
+*/
